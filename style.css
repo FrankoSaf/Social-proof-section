@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+*,*::after,*::before{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+:root{
+    font-size:62.5%;
+    font-family:'Spartan', sans-serif;
+}
+body{
+    font-size:1.6rem;
+    
+    background:url(images/bg-pattern-top-mobile.svg) no-repeat;
+}
+main{
+    
+    padding:6rem 1.9rem;
+}
+.infos{
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+}
+.infos>*{
+    margin-bottom:3rem;
+}
+h1{
+    color:hsl(300, 43%, 22%);
+    font-weight:700;
+    font-size:3rem;
+    padding:0 4rem;
+}
+.infos p{
+    color:hsl(303, 10%, 53%);
+}
+ul{
+    list-style-type: none;
+    color:hsl(300, 43%, 22%);
+    font-weight:700;
+}
+li{
+    background-color:hsl(300, 24%, 96%);
+    margin-bottom:1rem;
+    padding:1rem ;
+    border-radius:1rem;
+}
+li::before{
+    display:block;
+    content:url(images/icon-star.svg) "\00a0 " url(images/icon-star.svg)"\00a0 "url(images/icon-star.svg)"\00a0 "url(images/icon-star.svg)"\00a0 "url(images/icon-star.svg);
+    
+}
+.reviews{
+    display:flex;
+    flex-direction: column;
+}
+article{
+    margin-bottom:1rem;
+    background-color:hsl(300, 43%, 22%);
+    color:hsl(0, 0%, 100%);
+    padding:2rem 3rem 5rem 3rem;
+    border-radius:1rem;
+}
+h4{
+    vertical-align:middle;
+    margin-top:1rem;
+    
+}
+span{
+    display:block;
+    color:hsl(333, 80%, 67%);
+    margin-top:.5rem;
+    font-weight:400;
+}
+.reviews__img{
+    float:left;
+    width:60px;
+    border-radius:50%;
+    margin-right:2.5rem;
+    margin-bottom:4rem;
+    vertical-align:center;
+}
+h4::after{
+    display:block;
+    content: "";
+    clear:both;
+}
+@media (min-width: 1220px){
+    .infos,.reviews{
+        flex-direction:row;
+        padding:0rem 10rem;
+    }
+    .intro{
+        min-width:45%;
+        padding:5rem 15rem 5rem 0;
+        text-align:start;
+    }
+    h1{
+        padding-left:0;
+        font-size:5rem;
+        margin-bottom:1rem;
+    }
+    li{
+        min-width:70%;
+        float:right;
+    }
+    li::before{
+        display:inline;
+        margin-right:4rem;
+    }
+    ul{
+        padding-top:5rem;
+        min-width:55%;
+    }
+    li:first-of-type{
+        margin-right:20rem;
+    }
+    li:nth-of-type(2){
+        margin-right:10rem;
+    
+        
+    }
+
+    article:not(:last-of-type) {
+        margin-right:3rem;
+        
+    }
+    article:nth-of-type(2){
+        position:relative;
+        top:2rem;
+    }
+    article:last-of-type{
+        position:relative;
+        top:4rem;
+    }
+}
