@@ -12,7 +12,7 @@
 body{
     font-size:1.6rem;
     
-    background:url(images/bg-pattern-top-mobile.svg) no-repeat;
+    background:url(images/bg-pattern-top-mobile.svg) no-repeat, url(images/bg-pattern-bottom-mobile.svg) no-repeat bottom right;
 }
 main{
     
@@ -87,6 +87,11 @@ h4::after{
     clear:both;
 }
 @media (min-width: 1220px){
+    body{
+        
+        height:100vh;
+        background:url(images/bg-pattern-top-desktop.svg) no-repeat, url(images/bg-pattern-bottom-desktop.svg) no-repeat right bottom ;
+    }
     .infos,.reviews{
         flex-direction:row;
         padding:0rem 10rem;
