@@ -98,7 +98,7 @@ h4::after{
     }
     .intro{
         min-width:45%;
-        padding:5rem 15rem 5rem 0;
+        padding:2rem 15rem 5rem 0;
         text-align:start;
     }
     h1{
@@ -115,7 +115,7 @@ h4::after{
         margin-right:4rem;
     }
     ul{
-        padding-top:5rem;
+        padding-top:2rem;
         min-width:55%;
     }
     li:first-of-type{
@@ -133,10 +133,10 @@ h4::after{
     }
     article:nth-of-type(2){
         position:relative;
-        top:2rem;
+        top:5rem;
     }
     article:last-of-type{
         position:relative;
-        top:4rem;
+        bottom:-10rem;
     }
 }
